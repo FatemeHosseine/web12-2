@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link  type="text/css" rel="stylesheet" href="web12.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="outpout">
+            <input type="text" id="td-1">
+
+        </div>
+        <div class="btn">
+            <button id="one">1</button>
+            <button id="two" >2</button>
+            <button id="tree">3</button>
+            <button id="btn-sum" type="button">+</button>
+            <button id="four">4</button>
+            <button id="five">5</button>
+            <button id="six"> 6</button>
+            <button id="btn-menha" >-</button>
+            <button id="seven">7</button>
+            <button eight>8</button>
+            <button id="nine">9</button>
+            <button id="taghsim" type="button">/</button>
+            <button>.</button>
+            <button id="ziro">0</button>
+            <button id="btn-equal" type="button">=</button>
+            <button id="zarb">*</button>
+        </div>
+
+    </div>
+    <script>
+        var td_1 = document.getElementById("td-1");
+        var btn_sum = document.getElementById("btn-sum");
+        var btn_menha = document.getElementById("btn-menha");
+        var zarb = document.getElementById("zarb");
+        var taghsim = document.getElementById("taghsim");
+        var btn_equal = document.getElementById("btn-equal");
+        var a , b , c ;
+        var one = document.getElementById("one")
+        var two = document.getElementById("two")
+        var tree = document.getElementById("tree")
+        var four = document.getElementById("four")
+        var five = document.getElementById("five")
+        var six = document.getElementById("six")
+        var seven = document.getElementById("seven")
+        var eight = document.getElementById("eight")
+        var nine = document.getElementById("nine")
+        var ziro = document.getElementById("ziro")
+        var one = document.getElementById("one")
+
+    
+one.onclick = function(){
+   td_1.value = 1 
+}
+two.onclick = function(){
+   td_1.value = 2 
+}
+tree.onclick = function(){
+   td_1.value = 3 
+}
+four.onclick = function(){
+   td_1.value = 4 
+}
+        btn_sum.onclick = function(){
+             a = parseInt(td_1.value);
+            td_1.value = "";
+            alert ("لطفا عدد دوم را وارد کن مهندس");
+
+        }
+        btn_equal.onclick = function(){
+             b = parseInt(td_1.value)
+             c = a + b ;
+            td_1.value = c;
+            
+        
+            
+        }
+        btn_menha.onclick = function(){
+     a = parseInt(td_1.value);
+
+     td_1.value = "";
+            alert ("لطفا عدد دوم را وارد کن مهندس");
+         c = a - b ;
+    }
+     zarb.onclick = function(){
+         a = parseInt(td_1.value);
+         c = a * b ;
+         
+         td_1.value = "";
+            alert ("لطفا عدد دوم را وارد کن مهندس");
+    }
+    taghsim.onclick = function(){
+         a = parseInt(td_1.value); 
+         
+         td_1.value = "";
+            alert ("لطفا عدد دوم را وارد کن مهندس");
+
+         c = a / b ;
+    }
+   
+    </script>
+</body>
+</html>

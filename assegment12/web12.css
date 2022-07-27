@@ -1,0 +1,30 @@
+.calculator{
+    width: 200px;
+    height: 300px;
+    background:rgba(255, 255,  0,194);
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn{
+    width: 70%;
+    padding: 10px;
+    margin: 0px;
+}
+button{
+    width: 20px;
+    font-size: 1.rem;
+    padding: 4px;
+    box-sizing: border-box;
+    margin: 3px;
+
+}
+.outpout input{
+    margin: 2px;
+    margin-left: 5px;
+    width: 180px;
+    height: 50px;
+    border-style: none;
+    background-color: rgba(215, 210, 255,.9);
+
+}
