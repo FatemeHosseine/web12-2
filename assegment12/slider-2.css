@@ -1,0 +1,35 @@
+.slider{
+    display: flex;
+}
+.slider-child{
+    width: 100%;
+    display: none;
+
+
+}
+.slider-img{
+    width: 100%;
+}
+.active{
+    display: block;
+}
+.slider-btn{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 120px;
+    border-style: solid;
+    border-width: 30px;
+}
+#btn-right{
+    right: 20px;
+    border-width: 20px , 0, 20px, 20px;
+    border-color: transparent transparent transparent white;
+}
+#btn-left{
+    left: 20px;
+    border-width: 20px , 20, 20px, 0;
+    border-color: transparent white  transparent transparent;
+}
+
+ 

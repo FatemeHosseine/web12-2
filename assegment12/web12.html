@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link  type="text/css" rel="stylesheet" href="web12.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="outpout">
+            <input type="text" id="td-1">
+
+        </div>
+        <div class="btn">
+            <button class="active">1</button>
+            <button  >2</button>
+            <button >3</button>
+            <button id="btn-sum" type="button">+</button>
+            <button >4</button>
+            <button >5</button>
+            <button > 6</button>
+            <button id="btn-menha" >-</button>
+            <button >7</button>
+            <button >8</button>
+            <button >9</button>
+            <button id="taghsim" type="button">/</button>
+            <button>.</button>
+            <button >0</button>
+            <button id="btn-equal" type="button">=</button>
+            <button id="zarb">*</button>
+        </div>
+
+    </div>
+    <script>
+        var td_1 = document.getElementById("td-1");
+        var btn_sum = document.getElementById("btn-sum");
+        var btn_menha = document.getElementById("btn-menha");
+        var zarb = document.getElementById("zarb");
+        var taghsim = document.getElementById("taghsim");
+        var btn_equal = document.getElementById("btn-equal");
+        var btns = document.getElementsByClassName("btn")
+        var a , b , c ;
+      var index = 0 ;
+
+    btns.onclick = function(){
+
+    }
+
+        btn_sum.onclick = function(){
+             a = parseInt(td_1.value);
+            td_1.value = "";
+
+        }
+        btn_equal.onclick = function(){
+             b = parseInt(td_1.value)
+             c = a + b ;
+            td_1.value = c;
+
+            
+        
+            
+        }
+        btn_menha.onclick = function(){
+     a = parseInt(td_1.value);
+
+     td_1.value = "";
+         c = a - b ;
+         
+    }
+     zarb.onclick = function(){
+         a = parseInt(td_1.value);
+         c = a * b ;
+         
+         td_1.value = "";
+    }
+    taghsim.onclick = function(){
+         a = parseInt(td_1.value); 
+         
+         td_1.value = "";
+
+         c = a / b ;
+    }
+   
+    </script>
+</body>
+</html>
